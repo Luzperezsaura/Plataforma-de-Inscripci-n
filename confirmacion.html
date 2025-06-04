@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscripción a Concursos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet" />
+  <link rel="icon" href="icono2.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Archivo', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .mensaje {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+    }
+
+    .mensaje h2 {
+      color: #153244;
+      margin-bottom: 20px;
+    }
+
+    .mensaje p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #153244;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0f2435;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mensaje">
+    <h2>Registro exitoso</h2>
+    <p>Se envió un email de confirmación a tu correo. Por favor, verifica tu bandeja de entrada.</p>
+    <button onclick="window.location.href='index.html'">Ir a Iniciar sesión</button>
+  </div>
+</body>
+
+</html>

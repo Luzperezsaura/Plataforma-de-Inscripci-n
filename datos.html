@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscripción a Concursos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet" />
+  <link rel="icon" href="icono2.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Archivo', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #153244;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    form ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-width: 400px;
+    }
+
+    form li {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #153244;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0f2535;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo3.png" alt="Logo concurso" width="150" height="110" />
+    <h1>Inscripción a concursos</h1>
+  </header>
+
+  <main>
+    <form action="/datos" method="post" enctype="multipart/form-data">
+      <ul>
+        <li>
+          <label for="name">Nombre Completo:</label>
+          <input type="name" id="name" name="user_name" placeholder="Juan Pelotas" required />
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail" placeholder="correo@email.com" required />
+        </li>
+        <li>
+          <label for="tel">Número de teléfono:</label>
+          <input type="tel" id="phone" name="user_phone" placeholder="+54 9 11 1234-5678" />
+        </li>
+        <li>
+          <label for="prof">Profesión:</label>
+          <input type="text" id="prof" name="user_prof" placeholder="Médico" required />
+        </li>
+        <li>
+          <label for="esp">Especialidad:</label>
+          <input type="text" id="esp" name="user_esp" placeholder="Psiquiatra" required />
+        </li>
+        <li>
+          <label for="cv">Adjuntar Curriculum Vitae:</label>
+          <input type="file" id="CV" name="archivo_cv" />
+        </li>
+        <li>
+          <label for="cv">Adjuntar Titulo:</label>
+          <input type="file" id="titulo" name="archivo_titulo" />
+        </li>
+        <li>
+          <label for="dni">Adjuntar DNI:</label>
+          <input type="file" id="dni" name="archivo_dni" />
+        </li>
+        <li>
+          <button type="submit">Enviar</button>
+        </li>
+      </ul>
+    </form>
+  </main>
+</body>
+
+</html>
